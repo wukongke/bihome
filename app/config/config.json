@@ -1,0 +1,36 @@
+{
+	"database": {
+    "Url": "mongodb://127.0.0.1:27017",
+		"DbName"     : "dev-bihome",
+		"MaxIdleConns" : 5,          /*空闲时最大的连接数*/
+		"MaxOpenConns" : 10          /*最大的连接数*/
+	},
+	"redis": {
+		"Url"         : "127.0.0.1:6379"/*redis所在机器的ip*/
+	},
+	"app": {
+		"APIPoweredBy"        : "Golang123 API",/*后台go加的X-Powered-By*/
+		"SiteName"            : "Golang中文社区",      /*网站名称*/
+		"Host"                : "dev.golang123.com",  /*网站域名*/
+		"ImgHost"             : "dev.golang123.com",  /*图片服务器域名*/
+		"Env"                 : "development",        /*模式(开发，测试，产品)*/
+		"APIPrefix"           : "/api", /*api服务请求前缀*/
+		/*图片上传的目录, 默认是golang123/website/static/upload/img目录*/
+		/*如果要修改的话，请使用绝对路径，不要使用相对路径, 并在Nginx配置中，将修改后的目录配置为静态目录*/
+		"UploadImgDir"        : "",
+		"ImgPath"             : "/upload/img",        /*上传后的图片请求地址前缀*/
+		"Port"                : 8023,                 /*go监听的端口*/
+		"SessionID"           : "sessid",             /*后台设置的session id*/
+		"SessionTimeout"      : 30,                   /*session超时时间，单位分钟*/
+		"PassSalt"            : "passsalt",           /*用户密码加盐*/
+		"MailUser"            : "",                   /*域名邮箱账号*/
+		"MailPass"            : "",                   /*域名邮箱密码*/
+		"MailHost"            : "smtp.qq.com",        /*smtp邮箱域名*/
+		"MailPort"            : 465,                  /*smtp邮箱端口*/
+		"MailFrom"            : "",                   /*邮件来源*/
+		"Github"              : "https://github.com/shen100/golang123"/*golang123项目github地址*/
+	},
+	"api": {
+    "Prefix" : "/bihome/api"                    /*api服务请求前缀*/
+	}
+}

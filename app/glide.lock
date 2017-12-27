@@ -1,0 +1,12 @@
+hash: 8fbdbf59b8a234587b6b2451232220f26f27ed353547d0f583c57947db31200a
+updated: 2017-12-27T10:23:00.385233413+08:00
+imports:
+- name: github.com/joho/godotenv
+  version: a79fa1e548e2c689c241d10173efd51e5d689d5b
+- name: github.com/labstack/echo
+  version: 935a60782cbbc55110e7bd4b33120e4567cbee43
+- name: golang.org/x/crypto
+  version: 27b9897dfcda296fc086003b6e46fca80a29512d
+- name: gopkg.in/mgo.v2
+  version: 3f83fa5005286a7fe593b055f0d7771a7dce4655
+testImports: []
