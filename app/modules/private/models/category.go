@@ -3,10 +3,11 @@ package models
 import (
 	"work-codes/bihome/app/common"
 	"work-codes/bihome/app/config"
+	"work-codes/bihome/app/db"
 	"work-codes/bihome/app/libs"
 )
 
-var CategoryVO = common.DB(config.DBConfig.DbName).C("tb_category")
+var CategoryVO = db.MgoDB(config.DBConfig.DbName).C("tb_category")
 
 // Category 话题分类
 type Category struct {

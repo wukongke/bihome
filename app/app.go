@@ -7,7 +7,7 @@ import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 
-	"work-codes/bihome/app/common"
+	"work-codes/bihome/app/db"
 	"work-codes/bihome/app/routes"
 )
 
@@ -31,7 +31,7 @@ func StartServer() error {
 }
 
 func main() {
-	defer common.MgoClose()
+	defer db.MgoClose()
 
 	err := StartServer()
 	if err != nil {
