@@ -1,0 +1,13 @@
+#app/app
+#app/vendor
+.remote-sync.json
+.vscode/
+view/dist/
+.idea/
+.dist/
+view/node_modules/
+view/npm-debug.log*
+view/yarn-debug.log*
+view/yarn-error.log*
+#view/static/data
+.DS_Store
