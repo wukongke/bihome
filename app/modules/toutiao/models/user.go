@@ -3,10 +3,11 @@ package models
 import (
 	"work-codes/bihome/app/common"
 	"work-codes/bihome/app/config"
+	"work-codes/bihome/app/db"
 	"work-codes/bihome/app/libs"
 )
 
-var UserVO = common.DB(config.DBConfig.DbName).C("tb_user")
+var UserVO = db.MgoDB(config.DBConfig.DbName).C("tb_user")
 
 // 用户表
 type User struct {
