@@ -1,0 +1,8 @@
+package: work-codes/bihome/app
+import:
+- package: golang.org/x/crypto
+- package: github.com/labstack/echo
+  version: v3.2.1
+- package: gopkg.in/mgo.v2
+- package: github.com/joho/godotenv
+  version: v1.2.0
