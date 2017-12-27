@@ -1,4 +1,4 @@
-package libs
+package lib
 
 import (
 	mgo "gopkg.in/mgo.v2"
